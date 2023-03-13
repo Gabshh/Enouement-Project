@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="x-icon" href="./img/icon-astronaut.svg">
+
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/login.css">
+    <link rel="stylesheet" type="text/css" href="./css/login-background.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    
+
+    <title>Énouement - Login</title>
+</head>
+<body>
+
+    <section id="login-cms">
+        <div class="cadente"></div>
+        <div class="estrelas"></div>
+        <div class="efeito-brilho"></div>
+
+        <img src="./img/enouement-logo.png" id="logo" alt="">
+
+        <div class="login-container">
+            
+            <div class="planetas" style="--i:0;">
+                <img src="./img/astronaut-illustration.svg" id="illustration" alt="">
+            </div>
+            
+
+            <div class="ondas-container" >
+                <section class="transicao-ondas">
+                    <div class="onda onda1"></div>
+                    <div class="onda onda2"></div>
+                    <div class="onda onda3"></div>
+                </section>
+            </div>
+
+            <div class="dados-container">
+
+                <img src="./img/icon-astronaut.svg" id="icon-pfp" alt="">
+                <h1>Bem-vindo a nossa órbita!</h1>
+                <h2>Acesse sua conta e entre em nossa atmosfera...</h2>
+
+
+                <div class="dados-box">
+                    <form>
+                        <div id="user-box" class="input-box">
+                            <input type="text" name="username" id="user-input" required>
+                            <label for="">Usuário</label> 
+                            <i class="fa fa-user-circle" aria-hidden="true" id="user-icon"></i>
+                        </div>
+                        <div id="user-box" class="input-box">
+                            <input type="password" name="password" id="password-input" required>
+                            <label for="">Senha</label>
+                            <i class="fa fa-eye" aria-hidden="true" id="olho-icon" ></i>
+                        </div>
+                        <div class="forgot-password">
+                        <a href="#" id="forgot-password">Esqueci minha senha</a>
+                        </div>
+                        <div class="input-box">
+                            <input id="login-btn" type="submit" value="Login">
+                        </div>
+                        <div class="register">
+                            <h3>É novo aqui?<a href="#" id="register">Criar novo cadastro</a></h3>
+                        </div>
+                    </form>
+
+                </div>
+                
+                
+            </div>
+        </div>
+
+    </section>
+
+</body>
+</html>

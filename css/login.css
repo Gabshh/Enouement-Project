@@ -1,0 +1,405 @@
+#login-cms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #584BF8;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.login-container{
+    position: relative;
+    width: 35vw;
+    min-height: 50vh;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.dados-container{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    left: 390px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    z-index: 3;
+}
+
+.dados-box{
+    width: 100%;
+}
+
+.login-container h1{
+    position: relative;
+    width: max-content;
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(109, 109, 109);
+}
+.login-container h2{
+    position: relative;
+    width: max-content;
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(109, 109, 109);
+}
+
+.forgot-password{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#forgot-password {
+    position: relative;
+    width: max-content;
+    font-size: 1.4rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    top: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #949494;
+}
+
+#logo{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 10%;
+    top: 0;
+    left: 2.5%;
+    position: absolute;
+    z-index: 4;
+}
+
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register h3, #register{
+    width: max-content;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.register h3{
+    color: #979797;
+    margin-right: 7px;
+}
+
+#register{
+    color: #9B81FF;
+    margin-left: 7px;
+}
+
+#icon-pfp {
+    position: relative;
+    height: 20%;
+}
+
+#illustration {
+    height: 850px;
+}
+
+.form{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+
+.input-box{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box input{
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 10px;
+    padding-right: 48px;
+}
+
+#user-box {
+    position: relative;
+    margin-top: 50px;
+  }
+  
+  #user-box input {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1.7rem;
+    color: rgb(109, 109, 109);
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 5px solid #9B81FF;
+    outline: none;
+    background: transparent;
+  }
+  
+  #user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1px 0;
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    color: #979797;
+    pointer-events: none;
+    transition: all 0.5s;
+  }
+  
+  #user-box input:focus ~ label,
+  #user-box input:valid ~ label {
+    top: -30px;
+    left: 0;
+    color: #9B81FF;
+    font-size: 1.4rem;
+  }
+
+#user-icon{
+    position: absolute;
+    font-size: 1.5rem;
+    padding-top: 10px;
+    top: -0.0.1vh;
+    right: 1.5vw;
+    color: #979797;
+}
+
+#olho-icon{
+    position: absolute;
+    font-size: 1.5rem;
+    padding-top: 10px;
+    top: -0.0.1vh;
+    right: 1.5vw;
+    cursor: pointer;
+    color: #979797;
+}
+
+#login-btn{
+    height: 60px;
+    width: 100%;
+    margin-top: 5vh;
+    background: rgba(112,76,247);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    padding: 10px 11px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#login-btn:hover{
+    transform: translateY(-6px);
+}
+
+.planetas{
+    position: absolute;
+    z-index: 3;
+    animation: flutuar 8s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+}
+
+@keyframes flutuar {
+    0%,100% {
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+}
+
+.planetas:nth-child(1) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    left: -450px;
+    z-index: 2;
+}
+
+/***************************/
+
+.ondas-container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /*rotate: -120deg;*/
+    
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+section .onda {
+    position: absolute;
+    bottom: 0;
+    left: 330px;
+    width: 100%;
+    height: 100%;
+    background: url(../img/wavy-divisor.png);
+    background-size: 100% 4000px;
+    z-index: 8;
+}
+
+section .onda.onda1 {
+    animation: animate 60s linear infinite;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+section .onda.onda2 {
+    animation: animate2 45s linear infinite;
+    opacity: 0.1;
+    animation-delay: -5s;
+    bottom: 0px;
+}
+section .onda.onda3 {
+    animation: animate2 45s linear infinite;
+    opacity: 0.1;
+    animation-delay: -2s;
+    bottom: 0px;
+}
+
+@keyframes animate{
+    0%{
+        background-position-y: 0;
+    }
+    100%{
+        background-position-y: 2000px;
+    }
+}
+@keyframes animate2{
+    0%{
+        background-position-y: 0;
+    }
+    100%{
+        background-position-y: 2000px;
+    }
+}
+
+/*************************** RESPONSIVIDADE *************************/
+
+@media only screen and (max-width: 768px) {
+
+    .ondas-container{
+        margin-top: -200px;
+        rotate: 90deg;
+    }
+
+    #logo{
+        height: 6%;
+    }
+
+    #illustration {
+        height: 450px;
+    }
+
+    .planetas:nth-child(1) {
+        top: 0;
+        left: -80px;
+    }
+
+    #icon-pfp {
+        height: 15%;
+    }
+
+    .dados-container{
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        left: 0px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .dados-container img, h1, h2{
+        position: absolute;
+        z-index: 5;
+    }
+
+    .dados-container h2{
+        margin-bottom: 1180px;
+    }
+
+    .dados-box{
+        position: absolute;
+        padding-left: 35px;
+        padding-right: 50px;
+        margin-bottom: 79%;
+        padding-top: 30%;
+        /*margin-bottom: 110px;*/
+        background-color: rgb(255, 255, 255);
+        height: 100vh;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 489px) {
+
+    #illustration {
+        height: 420px;
+    }
+
+    .planetas:nth-child(1) {
+        margin-top: 50px;
+        left: -110px;
+    }
+
+    section .onda {
+        position: absolute;
+        bottom: 0;
+        left: 330px;
+        width: 100%;
+        height: 100%;
+        background: url(../img/mobile-wavy-divisor.png);
+        background-size: 380px 1900px;
+        z-index: 8;
+    }
+
+    .dados-box{
+        padding-left: 35px;
+        padding-right: 50px;
+        margin-bottom: 145%;
+        padding-top: 57%;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .login-container h1{
+        font-size: 1.4rem;
+    }
+    .login-container h2{
+        margin-top: 10px;
+        font-size: 1rem;
+        letter-spacing: 0px;
+    }
+
+}
