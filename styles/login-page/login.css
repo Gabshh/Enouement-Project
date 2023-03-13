@@ -317,7 +317,7 @@ section .onda.onda3 {
     .ondas-container{
         margin-top: -200px;
         rotate: 90deg;
-        height: 120vh;
+        height: 130vh;
         width: 100vw;
     }
 
@@ -381,9 +381,21 @@ section .onda.onda3 {
         width: 100vw;
     }
 
+    #illustration {
+        height: 390px;
+    }
+
+    .planetas:nth-child(1) {
+        left: -40px;
+    }
+
+    #icon-pfp {
+        margin-top: 55%;
+    }
+
     .dados-box{
         margin-bottom: 79%;
-        padding-top: 30%;
+        padding-top: 50%;
     }
 
 }
@@ -391,12 +403,12 @@ section .onda.onda3 {
 @media only screen and (max-width: 489px) {
 
     #illustration {
-        height: 420px;
+        height: 320px;
     }
 
     .planetas:nth-child(1) {
         margin-top: 50px;
-        left: -110px;
+        left: -40px;
     }
 
     section .onda {
@@ -413,8 +425,8 @@ section .onda.onda3 {
     .dados-box{
         padding-left: 35px;
         padding-right: 50px;
-        margin-bottom: 135%;
-        padding-top: 57%;
+        margin-bottom: 115%;
+        padding-top: 67%;
         height: 100vh;
         width: 100%;
     }
@@ -429,19 +441,28 @@ section .onda.onda3 {
         letter-spacing: 0px;
     }
 
-    #forgot-password{
-        font-size: 1.1rem;
+    #user-box label {
+        font-size: 1.3rem;
+      }
+      
+      #user-box input:focus ~ label,
+      #user-box input:valid ~ label {
+        font-size: 1.2rem;
+      }
+
+    #user-box input, #forgot-password, .register h3, #register {
+        font-size: 1.2rem;
     }
 
-    .register h3, #register{
-        font-size: 1.2rem;
+    #user-icon, #olho-icon {
+        padding-top: 1px;
     }
 
 }
 
 @media only screen and (max-width: 427px) {
     .dados-box{
-        margin-bottom: 145%;
+        margin-bottom: 130%;
     }
     .planetas:nth-child(1) {
         z-index: 11;
