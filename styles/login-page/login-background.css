@@ -10,12 +10,12 @@
   }
 
 .estrelas {
-    background:rgb(88, 75, 248) url(../img/stars.png) repeat top center;
+    background:rgb(88, 75, 248) url(../../img/stars.png) repeat top center;
     z-index:1;
 }
 
 .efeito-brilho {
-    background:transparent url(../img/shining-effect.png) repeat top center;
+    background:transparent url(../../img/shining-effect.png) repeat top center;
     z-index:1;
     animation:mover-efeito-brilho 200s linear infinite;
 }
@@ -32,7 +32,7 @@
   }
 
   .cadente {
-    background:transparent url(../img/shooting-stars.png) repeat top center;
+    background:transparent url(../../img/shooting-stars.png) repeat top center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

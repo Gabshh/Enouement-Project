@@ -262,7 +262,7 @@ section .onda {
     left: 330px;
     width: 100%;
     height: 100%;
-    background: url(../img/wavy-divisor.png);
+    background: url(../../img/wavy-divisor.png);
     background-size: 100% 4000px;
     z-index: 8;
 }
@@ -405,7 +405,7 @@ section .onda.onda3 {
         left: 330px;
         width: 100%;
         height: 100%;
-        background: url(../img/mobile-wavy-divisor.png);
+        background: url(../../img/mobile-wavy-divisor.png);
         background-size: 380px 1900px;
         z-index: 8;
     }
