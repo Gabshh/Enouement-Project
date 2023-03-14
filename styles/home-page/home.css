@@ -1,0 +1,289 @@
+#header{
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+}
+
+.nav-background {
+    background-color: #00000050;
+}
+
+header nav{
+    border-bottom-right-radius: 70px;
+    border-bottom-left-radius: 40px;
+    background-color: transparent;
+    transition: background-color 0.4s ease-in-out;
+}
+
+header nav a{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #ffffff;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.dropdown-item {
+    color: #000;
+    transition: background-color 0.4s ease-in-out;
+}
+
+#about{
+    color: #e48aff;
+}
+
+header.scrolled nav {
+    background-color: white;
+}
+
+header.scrolled nav a{
+    color:#584BF8;
+}
+
+header.scrolled .dropdown-item{
+    color: #000;
+}
+
+#logo{
+    height: 60px;
+}
+
+#search {
+    color: #e48aff;
+    border-color: #e48aff;
+    margin-right: 20px;
+}
+
+#search :hover{
+    background-color: white;
+}
+
+#menu{
+    height: 28px;
+}
+
+.calltoaction{
+    position: absolute;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    background-color: #0e0e0e30;
+    box-shadow: 7vw 0px 65px #0e0e0e31;
+    z-index: 3;
+}
+
+.calltoaction h1, h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    align-content: center;
+    color: white;
+    max-width: 49vw;
+    /*text-shadow: 5px 5px 5px #000;*/
+    z-index: 4;
+}
+
+.calltoaction h1{
+    font-size: 2.5rem;
+}
+
+.calltoaction h2{
+    font-size: 1.9rem;
+}
+
+#homeart {
+    margin-left: 55vw;
+    height: 666px;
+    animation: flutuar 8s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+}
+
+.about-section{
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 90vh;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px;
+    overflow-x: hidden;
+    background-color: #fff;
+    z-index: 3;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.about h1{
+    color: #36236E;
+    padding-top: 20px;
+}
+
+.about p{
+    padding-right: 69px;
+    padding-top: 40px;
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 55px;
+}
+
+#art{
+    display: flex;
+    align-items: center;
+}
+
+#enouement {
+    height: 75vh;
+    width: 35vw;
+    border-radius: 50px;
+}
+
+@keyframes flutuar {
+    0%,100% {
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+}
+
+/***********************RESPONSIVIDADE*********************/
+
+@media only screen and (max-width: 1024px) {
+
+    header nav a{
+        text-shadow: 4px 0 #000, -4px 0 #000, 0 4px #000, 0 -4px #000,
+        2px 2px #000, -2px -2px #000, 2px -2px #000, -2px 2px #000;
+        transition: text-shadow 0.2s ease-in-out;
+    }
+
+    #options{
+        text-shadow: 0px 0px 0px;
+    }
+
+    header.scrolled nav a{
+        text-shadow: 0px 0px 0px;
+    }
+
+    #search-input{
+        width: 80vw;
+    }
+
+    .content{
+        margin-top: 20vh;
+    }
+
+    .calltoaction {
+        height: 55vh;
+    }
+
+    .calltoaction h1, h2{
+        margin-left: 20px;
+        font-weight: 600;
+        max-width: 89vw;
+    }
+    
+    .calltoaction h1{
+        font-size: 2rem;
+    }
+    
+    .calltoaction h2{
+        font-size: 1.3rem;
+    }
+
+    #homeart {
+        opacity: 0;
+    }
+
+    .about h1{
+        font-size: 1.8rem;        
+    }
+    
+    .about p{
+        padding-top: 30px;
+        font-size: 1.2rem;
+        line-height: 27px;
+    }
+
+    #enouement {
+        height: 60vh;
+        width: 40vw;
+        border-radius: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    
+    header nav{
+        border-bottom-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+    }
+
+    #search-input{
+        width: 78vw;
+    }
+
+    .about-section{
+        height: 160vh;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .about h1{
+        font-size: 1.7rem;        
+        padding-top:  40px;
+    }
+    
+    .about p{
+        padding-right: 19px;
+        padding-top: 30px;
+        font-size: 1.3rem;
+        line-height: 27px;
+    }
+
+    #art{
+        justify-content: center;
+    }
+    
+    #enouement {
+        height: 82vh;
+        width: 92vw;
+        border-radius: 50px;
+        margin-bottom: 20vh;
+    }
+
+}
+
+@media only screen and (max-width: 489px) {
+    
+    #search-input{
+        width: 60vw;
+    }
+
+    .content{
+        margin-top: 30vh;
+    }
+    
+    .calltoaction h1{
+        font-size: 1.8rem;
+    }
+    
+    .calltoaction h2{
+        font-size: 1.2rem;
+    }
+
+    #enouement {
+        height: 62vh;
+        width: 92vw;
+    }
+    
+}
