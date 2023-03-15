@@ -21,6 +21,7 @@ body {
   align-items: center;
   padding: 10px;
   overflow-x: hidden;
+  overflow-y: hidden;
   background-color: #584BF8;
 }
 
