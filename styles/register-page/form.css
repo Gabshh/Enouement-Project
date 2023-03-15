@@ -8,7 +8,7 @@
 }
 
 :root {
-  --main-blue: #71b7e6;
+  --main-blue: #00ff4c;
   --main-purple: #9b59b6;
   --main-grey: #ccc;
   --sub-grey: #d9d9d9;
@@ -20,8 +20,8 @@ body {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  overflow-y: hidden;
   overflow-x: hidden;
+  background-color: #584BF8;
 }
 
 .estrelas, .efeito-brilho{
@@ -86,6 +86,7 @@ body {
   padding: 25px 30px;
   border-radius: 25px;
   z-index: 3;
+  margin-top: 60px;
 }
 .container .title {
   font-size: 25px;
@@ -107,8 +108,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 20px 0 12px 0;
-  padding-top: 10px;
+  margin: 40px 0 12px 0;
+  padding-top: 5px;
 }
 
 form .user__details .input__box {
@@ -118,7 +119,7 @@ form .user__details .input__box {
 
 .user__details .input__box .details {
   font-weight: 500;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
   display: block;
 }
 .user__details .input__box input {
@@ -127,7 +128,7 @@ form .user__details .input__box {
   padding-left: 15px;
   font-size: 1.3rem;
   color: rgb(109, 109, 109);
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   border: none;
   border-bottom: 3px solid #9B81FF;
   outline: none;
@@ -161,7 +162,7 @@ form .user__details .input__box {
 
 form .button {
   height: 45px;
-  margin: 45px 0;
+  margin: 20px 0;
 }
 
 form .button input {
@@ -185,9 +186,17 @@ form .button input:hover {
 #link {
   display: flex;;
   color: #9b59b6;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
-  margin-top: 15px;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .cadente {
+    rotate: 0deg;
+  }
+
 }
 
 @media only screen and (max-width: 584px) {
@@ -207,4 +216,10 @@ form .button input:hover {
   .user__details::-webkit-scrollbar {
     width: 0;
   }
+
+  .cadente {
+    background:none;
+    rotate: 0deg;
+  }
+
 }

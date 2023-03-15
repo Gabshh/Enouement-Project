@@ -80,9 +80,9 @@
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    height: 10%;
+    height: 4%;
     top: 0;
-    left: 2.5%;
+    left: 0;
     position: absolute;
     z-index: 4;
 }
@@ -199,7 +199,7 @@
     height: 60px;
     width: 100%;
     margin-top: 5vh;
-    background: rgba(112,76,247);
+    background: #704CF7;
     color: #fff;
     border: none;
     border-radius: 50px;
@@ -397,7 +397,7 @@ section .onda.onda3 {
 
     .dados-box{
         margin-bottom: 79%;
-        padding-top: 50%;
+        padding-top: 70%;
     }
 
 }
@@ -473,8 +473,13 @@ section .onda.onda3 {
 
 @media only screen and (max-width: 358px) {
     section .onda{
-        background: none;
-        background-size: 0;
+        bottom: 0;
+        left: 230px;
+        background-size: 280px 1600px;
+    }
+    .dados-box{
+        padding-top: 120%;
+        height: 125vh;
     }
     .login-container h2{
         font-size: 1.2rem;
@@ -482,5 +487,15 @@ section .onda.onda3 {
     }
     .dados-box{
         margin-bottom: 145%;
+    }
+}
+
+@media only screen and (max-width: 270px) {
+    section .onda{
+        background: none;
+        background-size: 0px 0px;
+    }
+    .dados-box{
+        padding-top: 130%;
     }
 }

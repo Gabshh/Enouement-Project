@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
+:root {
+	--primary: #704CF7;
+    --main-purple: #9b59b6;
+    --dark-purple: #36236E;
+    --main-grey: #ccc;
+    --sub-grey: #d9d9d9;
+  }
+
 #header{
     top: 0;
     height: 100vh;
@@ -124,7 +132,7 @@ header.scrolled .dropdown-item{
 }
 
 .about h1{
-    color: #36236E;
+    color: var(--dark-purple);
     padding-top: 20px;
 }
 
@@ -158,10 +166,10 @@ header.scrolled .dropdown-item{
 
 /***********************RESPONSIVIDADE*********************/
 
-@media only screen and (max-width: 1324px) {
+@media only screen and (max-width: 1424px) {
     
     .calltoaction {
-        height: 70vh;
+        height: 80vh;
     }
 
     #homeart{
