@@ -201,6 +201,12 @@ form .button input:hover {
 }
 
 @media only screen and (max-width: 584px) {
+  
+  body {
+    margin-top: 25px;
+    height: 80vh;
+  }
+
   .container {
     max-width: 100%;
   }
