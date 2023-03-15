@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="x-icon" href="../img/spiral-icon.png">
+    <link rel="stylesheet" type="text/css" href="styles/login-page/reset.css">
+    <link rel="stylesheet" type="text/css" href="../styles/register-page/form.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="../js/mask-pattern.js" defer></script>
+
+    <title>Énouement - Cadastro</title>
+</head>
+<body>
+
+    <section id="login-cms">
+      <div class="cadente"></div>
+      <div class="estrelas"></div>
+      <div class="efeito-brilho"></div>
+    </section>
+
+    <div class="container">
+        <div class="title">Novo cadastro</div>
+        <form action="#">
+          <div class="user__details">
+            <div class="input__box">
+              <input type="text" name="username" id="name-input" autocomplete="off" required>
+              <label for="">Nome</label>
+            </div>
+            <div class="input__box">
+              <input type="text" name="surname" id="surname-input" autocomplete="off" required>
+              <label for="">Sobrenome</label>
+            </div>
+            <div class="input__box">
+              <input type="text" name="cpf" id="cpf-input" autocomplete="off" maxlength="14" onkeypress="return blockLetters(event)" required>
+              <label id="cpf-label" for="">CPF</label>
+            </div>
+            <div class="input__box">
+              <input type="tel" name="phone" id="phone-input" maxlength="14" autocomplete="off" 
+             onkeypress="return blockLetters(event)" required>
+              <label for="">Tel. Celular</label>
+            </div>
+            <div class="input__box">
+              <input type="password" name="password" id="password-input" required>
+              <label for="">Senha</label>
+            </div>
+            <div class="input__box">
+              <input type="password" name="password" id="password-input" required>
+              <label for="">Confirme a senha</label>
+            </div>
+      
+          </div>
+          
+          <div class="button">
+            <input type="submit" value="Cadastrar">
+            <a id="link" href="../pages/successfully-registered.html" >~~~Página de mensagem~~~</a>
+          </div>
+        </form>
+      </div>
+
+</body>
+
+<script type="text/javascript">
+  function blockLetters(e) {
+    var x = e.which || e.keycode;
+    if((x >= 48 && x <= 57 )) 
+        return true;
+    else
+        return false;
+  }
+</script>
+
+</html>

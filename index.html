@@ -15,6 +15,7 @@
 
     <title>Énouement - Login</title>
 </head>
+
 <body>
 
     <section id="login-cms">
@@ -29,7 +30,6 @@
             <div class="planetas" style="--i:0;">
                 <img src="./img/astronaut-illustration.svg" id="illustration" alt="">
             </div>
-            
 
             <div class="ondas-container" >
                 <section class="transicao-ondas">
@@ -49,7 +49,7 @@
                 <div class="dados-box">
                     <form>
                         <div id="user-box" class="input-box">
-                            <input type="text" name="username" id="user-input" required>
+                            <input type="text" name="username" id="user-input" autocomplete="off" required>
                             <label for="">Usuário</label> 
                             <i class="fa fa-user-circle" aria-hidden="true" id="user-icon"></i>
                         </div>
@@ -65,7 +65,7 @@
                             <input id="login-btn" type="submit" value="Login">
                         </div>
                         <div class="register">
-                            <h3>É novo aqui?<a href="#" id="register">Criar novo cadastro</a></h3>
+                            <h3>É novo aqui?<a href="./pages/register.html" id="register">Criar novo cadastro</a></h3>
                         </div>
                     </form>
 

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
 #login-cms{
     display: flex;
     justify-content: center;
@@ -42,7 +44,7 @@
     position: relative;
     width: fit-content;
     font-size: 2rem;
-    font-weight: 200;
+    font-weight: 500;
     letter-spacing: 1px;
     font-family: 'Poppins', sans-serif;
     color: rgb(109, 109, 109);
@@ -51,7 +53,7 @@
     position: relative;
     width: max-content;
     font-size: 1.5rem;
-    font-weight: 100;
+    font-weight: 500;
     letter-spacing: 1px;
     font-family: 'Poppins', sans-serif;
     color: rgb(109, 109, 109);
@@ -403,12 +405,12 @@ section .onda.onda3 {
 @media only screen and (max-width: 489px) {
 
     #illustration {
-        height: 320px;
+        height: 350px;
     }
 
     .planetas:nth-child(1) {
         margin-top: 50px;
-        left: -40px;
+        left: -80px;
     }
 
     section .onda {
@@ -425,9 +427,9 @@ section .onda.onda3 {
     .dados-box{
         padding-left: 35px;
         padding-right: 50px;
-        margin-bottom: 115%;
-        padding-top: 67%;
-        height: 100vh;
+        margin-bottom: 105%;
+        padding-top: 87%;
+        height: 107vh;
         width: 100%;
     }
 
