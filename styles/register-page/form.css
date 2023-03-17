@@ -37,7 +37,7 @@ body {
 }
 
 .estrelas {
-  background:rgb(88, 75, 248) url(../../img/stars.png) repeat top center;
+  background:rgb(88, 75, 248) url(../../img/stars2.svg) repeat top center;
   z-index:1;
 }
 
@@ -99,7 +99,8 @@ body {
   content: "";
   position: absolute;
   height: 3.5px;
-  width: 30px;
+  border-radius: 5px;
+  width: 45px;
   background: linear-gradient(135deg, var(--main-blue), var(--main-purple));
   left: 0;
   bottom: 0;
